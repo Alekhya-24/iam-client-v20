@@ -30,6 +30,11 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/font-awesome/css/font-awesome.min.css",
+              "src/styles.scss"
+            ],
+            "scripts": [
               "src/styles.scss"
             ]
           },
@@ -94,5 +99,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a28d1c71-35d2-45a6-966e-1060c7b0db00"
   }
 }
