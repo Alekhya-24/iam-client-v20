@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #2d2d44;
+  color: #222;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark-theme .header,
+body.dark-theme .sidebar,
+body.dark-theme .footer {
+  background: #2d2d44;
+  color: #eee;
+}
+
+/* Add more dark theme overrides as needed */

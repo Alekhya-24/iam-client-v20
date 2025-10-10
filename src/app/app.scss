@@ -1,31 +1,36 @@
-:root {
-  --sidebar-width: 250px;
-}
-
-body {
+html, body {
+  height: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
 }
 
-.menu-toggle-btn {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  z-index: 1001;
-  background: none;
-  border: none;
-  cursor: pointer;
+:host {
+  display: block;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.menu-icon {
-  width: 24px;
-  height: 24px;
-  stroke: black;
-  fill: none;
-  stroke-width: 2;
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-.main-content {
-  margin-left: var(--sidebar-width);
-  padding: 20px;
+.layout-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+.content {
+  flex: 1;
+  padding: 0;
+  background: #fff;
+  overflow-y: auto;
 }

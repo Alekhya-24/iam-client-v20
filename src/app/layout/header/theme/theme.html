@@ -1,3 +1,7 @@
-<div class="theme-switcher">
-  <button>Theme</button>
+<div class="theme-toggle">
+  <label class="switch">
+    <input type="checkbox" [checked]="isDark" (change)="toggleTheme($event)" />
+    <span class="slider round"></span>
+  </label>
+  <span class="theme-label">{{ isDark ? 'Dark' : 'Light' }}</span>
 </div>

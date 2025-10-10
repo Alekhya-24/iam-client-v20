@@ -1,25 +1,31 @@
 .sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: var(--sidebar-width);
-  height: 100vh;
-  background: #2c3e50;
-  color: white;
-  padding: 20px;
-  overflow-y: auto;
+  width: 240px;
+  background: #2d2d44;
+  color: #fff;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%; // 👈 important
 }
 
-.sidebar-content ul {
+.sidebar nav {
+  flex: 1; // 👈 ensures nav grows full height
+}
+
+.sidebar nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.sidebar-content ul li {
-  margin-bottom: 15px;
+.sidebar nav ul li {
+  padding: 0.9rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
 }
 
-.sidebar-content ul li a {
-  color: white;
-  text-decoration: none;
+.sidebar nav ul li:hover,
+.sidebar nav ul li.active {
+  background: #414161;
 }
